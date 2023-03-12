@@ -1,0 +1,465 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /*Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: transparent;
+  }
+
+  /*Handle*/
+  ::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139);
+    border-radius: 10px;
+  }
+/*header da página*/
+header { 
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 56px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+/* area do logo */
+#esquerdo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+}
+
+/* estilizando o menu hamburguer */
+#esquerdo .hamburguer {
+    margin: 0px 25px; 
+    color: black;
+    font-size: 22px;
+    padding: 8px 13px;
+    border-radius: 50px;
+}
+
+#esquerdo .hamburguer:hover {
+    background-color: #f1f1f1;
+}
+
+/* informa que está selecionado o segundo elemento a */
+#esquerdo a:nth-child(2) {
+    width: 90px;
+}
+
+#esquerdo img {
+    width: 90px;
+    height: 20px;
+}
+
+#esquerdo p {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 10px;
+    bottom: 25%;
+    padding-left: 5px;
+}
+
+/* area de pesquisa */
+#meio {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#meio #box {
+    width: 70%;
+    height: 80%;
+    border-radius: 50px;
+    background-color: #f1f1f1;
+    margin-left: 9%;
+}
+
+#meio #box:hover {
+    background-color: #ccc;
+}
+
+#meio #box input {
+    width: 90%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 50px 0px 0px 50px;
+}
+
+#meio #box i {
+    margin: 15px;
+}
+
+#meio a {
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 8px 13px;
+    border-radius: 60px;
+    color: #000;
+}
+
+#meio a:hover {
+    background-color: #f1f1f1;
+}
+
+/* area do usuario */
+#direito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+
+#direito a {
+    color: #000;
+    padding: 5px 10px;
+    font-size: 22px;
+    border-radius: 50px;
+}
+
+#direito a:hover {
+    background-color: #f1f1f1;
+}
+
+/* seleciona o segundo elemento a da ID direito */
+#direito a:nth-child(2) {
+    margin: 0 30px;
+}
+
+#direito .img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: url(imagens/imagens/juh.jpg);
+    background-size: cover;
+}
+
+/* area de navegacao lateral*/
+#nav-left {
+    position: fixed;
+    background-color: #fff;
+    top: 56px;
+    height: 92vh;
+    overflow-y: scroll;/*cria barra de rolagem*/
+    width: 20%;
+    padding-top: 15px;
+    align-items: center;
+}
+
+nav .navBox {  
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    font-size: 18px;
+}
+
+nav .navBox:hover {
+    background-color: #f1f1f1;
+}
+
+nav .navBox a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+nav .active {
+    background-color: #f1f1f1;
+}
+
+nav .active:hover {
+    background-color: #ccc;
+}
+
+nav .navBox i {
+    width: 25%;
+    text-align: center;
+}
+
+nav #linha {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px auto;
+}
+
+nav .texto {
+    width: 90%;
+    padding-left: 10px;
+    margin: 0 auto 10px auto;
+}
+
+nav .texto h3 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+nav .navBox .width {
+    width: 25%;
+}
+
+nav .navBox .fotoCanal {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+nav .navBox .proa {
+    background: url(imagens/imagens/proa.png);
+    background-size: cover;
+}
+
+nav .navBox .código {
+    background: url(imagens/imagens/código.jpg);
+    background-size: cover;
+}
+
+nav .navBox .konai {
+    background: url(imagens/imagens/konai.jpg);
+    background-size: cover;
+}
+
+nav .navBox .rafaella {
+    background: url(imagens/imagens/rafa.jpg);
+    background-size: cover;
+}
+
+nav .navBox .premium {
+    background: url(imagens/imagens/youtubePremium.png);
+    background-size: cover;
+}
+
+nav .navBox .studio {
+    background: url(imagens/imagens/youtubeStudio.png);
+    background-size: cover;
+}
+
+nav .navBox .music {
+    background: url(imagens/imagens/youtubeMusic.png);
+    background-size: cover;
+}
+
+nav .navBox .kids {
+    background: url(imagens/imagens/youtubeKids.png);
+    background-size: cover;
+}
+
+nav .outros {
+    width: 90%;
+    margin-left: 20px 0 0 20px;
+}
+
+nav .outros a {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+}
+
+nav .copy {
+    color: rgb(165, 165, 165);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* começando a configurar a main */
+main {
+    position: relative;
+    top: 56px;
+    width: 80%;
+    margin-left: 20%;
+    height: 500px;
+}
+
+#insideMain {
+    position: fixed;
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    top: 56px;
+    left: 20%;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+#insideMain .linkNav {
+    position: sticky;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+#insideMain .linkNav:hover {
+    background-color: #ccc;
+}
+
+#insideMain .ativado {
+    background-color: #000;
+    color: #fff;
+}
+/* atribuindo cor preta para o fundo do primeiro elemento */
+
+#insideMain .ativado:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* começando a configurar a main */
+main {
+    position: relative;
+    top: 56px;
+    width: 80%;
+    margin-left: 20%;
+    height: 500px;
+}
+
+main section {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main section a {
+    width: 22.5%;
+    margin: 5px 12px;
+    text-decoration: none;
+}
+
+main section .videoBox .fotoVideo {
+    width: 100%;
+    height: 125px;
+    border-radius: 10px;
+}
+
+main section .videoBox .content {
+    display: flex;
+    margin-top: 10px;
+}
+
+main section .videoBox .content .fotoCanalVideo {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+main section .videoBox .content h1 {
+    color: #000;
+    width: 70%;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Roboto';
+}
+
+main section .videoBox .videoDesc {
+    position: relative;
+    left: 35px;
+    width: 70%;
+    margin: 10px;
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/*fotos Cassimiro*/
+.Cassimiro{
+    background: url(imagens/imagens/cassimiro.jpg);
+    background-size: cover;
+    
+}
+
+.Casimito{
+    background: url(imagens/imagens/unnamed.jpg);
+    background-size: cover;
+}
+/* final*/
+
+/* inicio phonk*/
+
+.phonk{
+    background: url(imagens/imagens/Phonk.jpg);
+    background-size: cover;
+}
+.PHONK{
+    background: url(imagens/imagens/channels4_profile\ \(2\).png);
+    background-size: cover;
+}
+
+/*final*/
+
+.sonho{
+    background: url(imagens/imagens/sonho.jpg);
+    background-size: cover;
+}
+.Sonho{
+    background: url(imagens/imagens/logosonho.jpg);
+    background-size: cover;
+}
+
+.layout{
+    background: url(imagens/imagens/layout.jpg);
+    background-size: cover;
+}
+
+.Layout{
+    background: url(imagens/imagens/layout01.png);
+    background-size: cover;
+}
+
+.chuva{
+    background: url(imagens/imagens/11111.jpg);
+    background-size: cover;
+}
+
+.Chuva{
+    background: url(imagens/imagens/Chuva.png);
+    background-size: cover;
+}
+
+.crossfire{
+    background: url(imagens/imagens/Crossfire.png);
+    background-size: cover;
+}
+
+.Crossfire{
+    background: url(imagens/imagens/logo\ crossfire.png);
+    background-size: cover;
+}
+
+.song{
+    background: url(imagens/imagens/song.jpg);
+    background-size: cover;
+}
+
+.Song{
+    background: url(imagens/imagens/Logosong.png);
+    background-size: cover;
+}
+
