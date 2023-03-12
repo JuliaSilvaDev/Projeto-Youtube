@@ -33,7 +33,7 @@ header {
     width: 100%;
     height: 56px;
     z-index: 10;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 /* area do logo */
@@ -105,7 +105,7 @@ header {
 }
 
 #meio #box i {
-    margin: 15px;
+    margin: 10px;
 }
 
 #meio a {
@@ -463,3 +463,92 @@ main section .videoBox .videoDesc {
     background-size: cover;
 }
 
+.konai{
+    background: url(imagens/imagens/fundo_konai.jpg);
+    background-size: cover;
+}
+
+.Konai{
+    background: url(imagens/imagens/konai.jpg);
+    background-size: cover;
+}
+
+.fogo{
+    background: url(imagens/imagens/fundo_fogo.jpg);
+    background-size: cover;
+}
+
+.Fogo{
+    background: url(imagens/imagens/fogo.jpg);
+    background-size: cover;
+}
+
+.figma{
+    background: url(imagens/imagens/fundo_figma.jpg);
+    background-size: cover;
+}
+
+.Figma{
+    background: url(imagens/imagens/logo_figma.jpg);
+    background-size: cover;
+}
+
+.vida{
+    background: url(imagens/imagens/fundo_vida.png);
+    background-size: cover;
+}
+
+.Vida{
+    background: url(imagens/imagens/logo_vida.jpg);
+    background-size: cover;
+}
+
+.console{
+    background: url(imagens/imagens/fundo_console.png);
+    background-size: cover;
+}
+
+.Console{
+    background: url(imagens/imagens/logo_console.jpg);
+    background-size: cover;
+}
+
+.alanzoka{
+    background: url(imagens/imagens/fundo_alanzoka.jpg);
+    background-size: cover;
+}
+
+.Alanzoka{
+    background: url(imagens/imagens/logo_alanzoka.jpg);
+    background-size: cover;
+}
+
+.raffa{
+    background: url(imagens/imagens/fundo_landing.png);
+    background-size: cover;/*centraliza a imagem dentro de onde será colocada*/
+}
+
+.Raffa{
+    background: url(imagens/imagens/rafa.jpg);
+    background-size: cover;
+}
+
+.gato{
+    background: url(imagens/imagens/fundo_gato.jpg);
+    background-size: cover;
+}
+
+.Gato{
+    background: url(imagens/imagens/logo_gato.jpg);
+    background-size: cover;
+}
+
+.barbie{
+    background: url(imagens/imagens/fundo_barbie.jpg);
+    background-size: cover;
+}
+
+.Barbie{
+    background: url(imagens/imagens/logo_barbie.jpg);
+    background-size: cover;
+}
